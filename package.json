@@ -1,0 +1,30 @@
+{
+  "name": "@vivid-svg/core",
+  "version": "1.0.0",
+  "description": "A lightweight library to support and enhance SVG images",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivid-svg/core.git"
+  },
+  "keywords": [
+    "frontend",
+    "front",
+    "svg",
+    "css",
+    "library",
+    "image",
+    "UI"
+  ],
+  "author": "Tessa Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivid-svg/core/issues"
+  },
+  "homepage": "https://github.com/vivid-svg/core#readme",
+  "dependencies": {}
+}
