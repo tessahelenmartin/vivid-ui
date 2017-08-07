@@ -3,7 +3,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
 'use strict';
 
-// var vividUI = require('vivid-ui');
+var vividUI = require('../src/index.js');
 // vividUI.magnify({
 //   fileName: "/puppy.jpg",
 //   parentSelector: ("#magnifyDemo"),
@@ -11,7 +11,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 //   magnifyFactor: 3
 // })
 
-},{}],2:[function(require,module,exports){
+},{"../src/index.js":"diffex"}],2:[function(require,module,exports){
 module.exports = function (configObj) {
   var svgNamespace = 'http://www.w3.org/2000/svg'
   var xlinkNamespace = 'http://www.w3.org/1999/xlink'
