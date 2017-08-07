@@ -28,13 +28,13 @@ There are two options for using the parallax function. The first displays only o
    scrollAxis:"y",                   // Scroll axis in which the parallax will be triggered (optional)
    imageAxis:"y",                    // Axis in which the image will be translated
    offsetBegin:true,                 // Determines if there is an offset from the top- if false or not
-                                     //   set, parallax begins when the top of the target div reaches the
-                                     //   top of the viewport; if true, parallax begins when the top of
-                                     //   the target div reaches the bottom of the viewport
-   offsetEnd:false                   // Determines if there is an offset from the bottom- if false or not
-                                     //   set, parallax ends when the bottom of the target div
+                                     //   set, parallax begins when the top of the target div reaches
+                                     //   the top of the viewport; if true, parallax begins when the  
+                                     //   top of the target div reaches the bottom of viewport
+   offsetEnd:false                   // Determines if there is an offset from the bottom- if false or
+                                     //   not set, parallax ends when the bottom of the target div
                                      //   reaches the top of the viewport; if true, parallax ends when
-                                     //   the bottom of the target div reaches the bottom of the viewport
+                                     //   the bottom of the target div reaches the bottom of viewport
  })
 ```
 The second overlays multiple images with parallax:
@@ -53,12 +53,12 @@ this.vividUI.parallax({
   scrollAxis:"y",                   // Scroll axis in which the parallax will be triggered
   imageAxis:"y",                    // Axis in which the image will be translated
   offsetBegin:true,                 // Determines if there is an offset from the top- if false or not
-                                    //   set, parallax begins when the top of the target div reaches the
-                                    //   top of the viewport; if true, parallax begins when the top of
-                                    //   the target div reaches the bottom of the viewport
-  offsetEnd:false                   // Determines if there is an offset from the bottom- if false or not
-                                    //   set, parallax ends when the bottom of the target div
+                                    //   set, parallax begins when the top of the target div reaches
+                                    //   the top of the viewport; if true, parallax begins when the  
+                                    //   top of the target div reaches the bottom of viewport
+  offsetEnd:false                   // Determines if there is an offset from the bottom- if false or
+                                    //   not set, parallax ends when the bottom of the target div
                                     //   reaches the top of the viewport; if true, parallax ends when
-                                    //   the bottom of the target div reaches the bottom of the viewport
+                                    //   the bottom of the target div reaches the bottom of viewport
 })
 ```
