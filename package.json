@@ -1,6 +1,6 @@
 {
   "name": "vivid-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight library with SVG oriented ui tools.",
   "main": "index.js",
   "scripts": {
