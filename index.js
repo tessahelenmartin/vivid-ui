@@ -4,12 +4,12 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 'use strict';
 
 var vividUI = require('../src/index.js');
-vividUI.magnify({
-  fileName: "/puppy.jpg",
-  parentSelector: ("#magnifyDemo"),
-  magnifyRadius: 75,
-  magnifyFactor: 3
-})
+// vividUI.magnify({
+//   fileName: "/puppy.jpg",
+//   parentSelector: ("#magnifyDemo"),
+//   magnifyRadius: 75,
+//   magnifyFactor: 3
+// })
 
 },{"../src/index.js":"diffex"}],2:[function(require,module,exports){
 module.exports = function (configObj) {
