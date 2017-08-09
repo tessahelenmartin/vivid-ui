@@ -1,4 +1,4 @@
-![vivid-ui-logo](src/vivid-ui-logo.svg)
+![vivid-ui-logo](src/vivid-ui-logo.png)
 # vivid-ui
 A lightweight library to support and enhance SVG images
 
