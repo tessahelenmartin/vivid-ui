@@ -28,9 +28,10 @@ module.exports = function (configObj) {
     }
 
     //CREATE LAYERS
-    for (var i = 0; i < configObj.layerFileNames.length; i++) {
+    for (var i = 0; i < configObj.layers.length; i++) {
       layersArray.push(document.createElementNS(svgNamespace,'image'))
-      layersArray[i].setAttributeNS(xlinkNamespace, 'xlink:href', configObj.layerFileNames[i]);
+      layersArray[i].setAttributeNS(xlinkNamespace, 'xlink:href', configObj.layers[i].fileName);
+      layersArray[i].setAttribute("width",parentContainer.clientWidth)
       rootSVG.appendChild(layersArray[i]);
     }
     parentContainer.appendChild(rootSVG);
@@ -46,7 +47,13 @@ module.exports = function (configObj) {
       window.addEventListener("scroll", function(event) {
         if (window.scrollY > (targetContainer.offsetTop - offsetBegin) && window.scrollY < (targetContainer.offsetTop+targetContainer.clientHeight-offsetEnd)) {
           for (var i = 0; i < layersArray.length; i++) {
-            layersArray[i].setAttribute('transform','matrix(1,0,0,1,0,'+((targetContainer.offsetTop-window.scrollY-offsetBegin)*scrollRateArray[i])+')')
+            if (configObj.layers[i].inverse) {
+              console.log("layersArray[i].getBBox().height "+layersArray[i].getBBox().height)
+              layersArray[i].setAttribute('transform','matrix(1,0,0,1,0,'+(layersArray[i].getBBox().height*-1+parentContainer.clientHeight+(targetContainer.offsetTop-window.scrollY-offsetBegin)*scrollRateArray[i]*-1)+')')
+            }
+            else {
+              layersArray[i].setAttribute('transform','matrix(1,0,0,1,0,'+((targetContainer.offsetTop-window.scrollY-offsetBegin)*scrollRateArray[i])+')')
+            }
           }
         }
       })
